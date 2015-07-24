@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Jul 19 13:37:29 AST 2015<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>15</td>
+<td title="MaintenanceTaskExecution-Thread-4 thread">MaintenanceTaskExecution-Thread-4</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="de.uniba.wiai.lspi.chord.service.impl.StabilizeTask category">de.uniba.wiai.lspi.chord.service.impl.StabilizeTask</td>
+<td>StabilizeTask.java:247</td>
+<td title="Message">Unexpected Exception caught in StabilizeTask!</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.NullPointerException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at de.uniba.wiai.lspi.chord.com.socket.SocketProxy.notify(SocketProxy.java:598)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at de.uniba.wiai.lspi.chord.service.impl.StabilizeTask.run(StabilizeTask.java:124)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:745)
+</td></tr>
+
+<tr>
+<td>50429</td>
+<td title="SocketProxy_Thread_ocsocket://127.0.0.1:8080/ thread">SocketProxy_Thread_ocsocket://127.0.0.1:8080/</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="de.uniba.wiai.lspi.chord.com.socket.SocketProxy category">de.uniba.wiai.lspi.chord.com.socket.SocketProxy</td>
+<td>SocketProxy.java:1010</td>
+<td title="Message">Could not read response from stream!</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.io.EOFException
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2601)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1319)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:371)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at de.uniba.wiai.lspi.chord.com.socket.SocketProxy.run(SocketProxy.java:998)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.Thread.run(Thread.java:745)
+</td></tr>
